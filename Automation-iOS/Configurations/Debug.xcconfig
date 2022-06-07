@@ -1,0 +1,12 @@
+//
+//  Debug.xcconfig
+//  Automation-iOS
+//
+//  Created by Dushan Saputhanthri on 6/6/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY = xxxx
+BASE_URL = restcountries.com/v2/lang/en
