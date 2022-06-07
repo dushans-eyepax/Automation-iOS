@@ -46,6 +46,26 @@ extension Configuration {
 }
 
 extension Configuration {
+    
+    //MARK: Get url query
+    public func getUrlQuery(apiVersion: ApiVersion, webService: WebService, parameters: [String : Any]) -> String {
+        
+        let queryParameters = Configuration.shared.getQueryFromDictionary(dict: parameters) ?? ""
+        
+        var urlString = "https://"
+        
+        urlString.append(Configuration.API.baseUrl)
+        urlString.append(apiVersion.value())
+        urlString.append(webService.value())
+        
+        if !parameters.isEmpty {
+            urlString.append("?\(queryParameters)")
+        }
+        
+        return urlString
+    }
+    
+    
     //MARK: Get url query from array of items (Int, String, Double etc. arrays)
     public func getQueryFromArray(key: String, array: [Any]) -> String? {
         
@@ -62,7 +82,6 @@ extension Configuration {
         query.removeLast()
         
         return query
-        
     }
     
     
@@ -82,6 +101,6 @@ extension Configuration {
         query.removeLast()
         
         return query
-        
     }
+    
 }

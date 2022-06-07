@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  CountryListViewController.swift
 //  Automation-iOS
 //
 //  Created by Dushan Saputhanthri on 6/6/22.
@@ -7,11 +7,9 @@
 
 import UIKit
 
-class MainViewController: BaseViewController {
+class CountryListViewController: BaseViewController {
     
-    let vm = MainViewModel()
-    
-    let tableViewReuseIdentifier = "CountryCell"
+    let vm = CountryListViewModel()
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,7 +18,7 @@ class MainViewController: BaseViewController {
         
         title = "Countries"
         
-        tableView.register(UINib(nibName: "CountryTVCell", bundle: nil), forCellReuseIdentifier: tableViewReuseIdentifier)
+        tableView.register(UINib(nibName: "CountryTVCell", bundle: nil), forCellReuseIdentifier: .CountryCell)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
@@ -30,7 +28,7 @@ class MainViewController: BaseViewController {
 
 }
 
-extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+extension CountryListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -41,19 +39,21 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: tableViewReuseIdentifier, for: indexPath) as? CountryTVCell {
-            cell.configureCell(with: vm.countryList[indexPath.row])
+        if let cell = tableView.dequeueReusableCell(withIdentifier: .CountryCell, for: indexPath) as? CountryTVCell {
+            let country = vm.countryList[indexPath.row]
+            cell.configureCell(with: country)
             return cell
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let country = vm.countryList[indexPath.row]
+        Coordinator.shared.pushToViewController(in: .Main, for: .CountryDetailsViewController, from: self, data: country)
     }
 }
 
-extension MainViewController {
+extension CountryListViewController {
     
     func getCountryList() {
         self.startLoading()

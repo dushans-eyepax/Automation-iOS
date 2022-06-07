@@ -12,18 +12,18 @@
 		54047462F38CB015F09F656C /* Pods_Automation_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7AC5E154AB322388DE0908 /* Pods_Automation_iOSTests.framework */; };
 		606F5516284E76780025251F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5515284E76780025251F /* AppDelegate.swift */; };
 		606F5518284E76780025251F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5517284E76780025251F /* SceneDelegate.swift */; };
-		606F551A284E76780025251F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5519284E76780025251F /* DetailsViewController.swift */; };
+		606F551A284E76780025251F /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5519284E76780025251F /* CountryDetailsViewController.swift */; };
 		606F551D284E76780025251F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F551B284E76780025251F /* Main.storyboard */; };
 		606F551F284E76790025251F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606F551E284E76790025251F /* Assets.xcassets */; };
 		606F5522284E76790025251F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F5520284E76790025251F /* LaunchScreen.storyboard */; };
 		606F552D284E76790025251F /* Automation_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F552C284E76790025251F /* Automation_iOSTests.swift */; };
 		606F5537284E76790025251F /* Automation_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5536284E76790025251F /* Automation_iOSUITests.swift */; };
 		606F5539284E76790025251F /* Automation_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5538284E76790025251F /* Automation_iOSUITestsLaunchTests.swift */; };
-		606F5549284E78F70025251F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5548284E78F70025251F /* MainViewController.swift */; };
+		606F5549284E78F70025251F /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5548284E78F70025251F /* CountryListViewController.swift */; };
 		606F554D284E796F0025251F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F554C284E795B0025251F /* BaseViewController.swift */; };
 		606F5550284E79B20025251F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F554F284E79B20025251F /* BaseViewModel.swift */; };
-		606F5552284E79C40025251F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5551284E79C40025251F /* MainViewModel.swift */; };
-		606F5554284E79DD0025251F /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5553284E79DD0025251F /* DetailsViewModel.swift */; };
+		606F5552284E79C40025251F /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5551284E79C40025251F /* CountryListViewModel.swift */; };
+		606F5554284E79DD0025251F /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5553284E79DD0025251F /* CountryDetailsViewModel.swift */; };
 		606F5559284E7C840025251F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5558284E7C840025251F /* Configuration.swift */; };
 		606F555B284E7DBB0025251F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F555A284E7DBB0025251F /* Constants.swift */; };
 		606F556E284EE9AB0025251F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F555F284EE9AB0025251F /* APIClient.swift */; };
@@ -44,6 +44,11 @@
 		606F5592284F4F2F0025251F /* LoaderIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F558F284F4F2F0025251F /* LoaderIndicator.swift */; };
 		606F5595284F52B20025251F /* CountryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5593284F52B20025251F /* CountryTVCell.swift */; };
 		606F5596284F52B20025251F /* CountryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606F5594284F52B20025251F /* CountryTVCell.xib */; };
+		606F559A284FA9CA0025251F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F5599284FA9CA0025251F /* APIService.swift */; };
+		606F559C284FB5030025251F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F559B284FB5000025251F /* Extensions.swift */; };
+		606F559E284FB5940025251F /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F559D284FB5940025251F /* Flag.swift */; };
+		606F55A0284FB88B0025251F /* Localizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F559F284FB88B0025251F /* Localizator.swift */; };
+		606F55A2284FB9CC0025251F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F55A1284FB9CC0025251F /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +74,7 @@
 		606F5512284E76780025251F /* Automation-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Automation-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606F5515284E76780025251F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		606F5517284E76780025251F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		606F5519284E76780025251F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		606F5519284E76780025251F /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
 		606F551C284E76780025251F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		606F551E284E76790025251F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606F5521284E76790025251F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,11 +84,11 @@
 		606F5532284E76790025251F /* Automation-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Automation-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606F5536284E76790025251F /* Automation_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation_iOSUITests.swift; sourceTree = "<group>"; };
 		606F5538284E76790025251F /* Automation_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automation_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		606F5548284E78F70025251F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		606F5548284E78F70025251F /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
 		606F554C284E795B0025251F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		606F554F284E79B20025251F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		606F5551284E79C40025251F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		606F5553284E79DD0025251F /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		606F5551284E79C40025251F /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		606F5553284E79DD0025251F /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
 		606F5556284E7AC70025251F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		606F5557284E7AEA0025251F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		606F5558284E7C840025251F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
@@ -106,6 +111,11 @@
 		606F558F284F4F2F0025251F /* LoaderIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderIndicator.swift; sourceTree = "<group>"; };
 		606F5593284F52B20025251F /* CountryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTVCell.swift; sourceTree = "<group>"; };
 		606F5594284F52B20025251F /* CountryTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTVCell.xib; sourceTree = "<group>"; };
+		606F5599284FA9CA0025251F /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		606F559B284FB5000025251F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		606F559D284FB5940025251F /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		606F559F284FB88B0025251F /* Localizator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizator.swift; sourceTree = "<group>"; };
+		606F55A1284FB9CC0025251F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7B3073045E79CE059D45DF1D /* Pods-Automation-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automation-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Automation-iOS/Pods-Automation-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		80D9701608120EE4519ADD6B /* Pods-Automation-iOS-Automation-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automation-iOS-Automation-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Automation-iOS-Automation-iOSUITests/Pods-Automation-iOS-Automation-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A4517F78C79AFDEC281F2C30 /* Pods-Automation-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automation-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Automation-iOSTests/Pods-Automation-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -251,10 +261,10 @@
 			isa = PBXGroup;
 			children = (
 				606F551B284E76780025251F /* Main.storyboard */,
-				606F5548284E78F70025251F /* MainViewController.swift */,
-				606F5551284E79C40025251F /* MainViewModel.swift */,
-				606F5519284E76780025251F /* DetailsViewController.swift */,
-				606F5553284E79DD0025251F /* DetailsViewModel.swift */,
+				606F5548284E78F70025251F /* CountryListViewController.swift */,
+				606F5551284E79C40025251F /* CountryListViewModel.swift */,
+				606F5519284E76780025251F /* CountryDetailsViewController.swift */,
+				606F5553284E79DD0025251F /* CountryDetailsViewModel.swift */,
 				606F5593284F52B20025251F /* CountryTVCell.swift */,
 				606F5594284F52B20025251F /* CountryTVCell.xib */,
 			);
@@ -297,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				606F555F284EE9AB0025251F /* APIClient.swift */,
+				606F5599284FA9CA0025251F /* APIService.swift */,
 				606F557B284F45FA0025251F /* CountriesAPI.swift */,
 			);
 			path = APIs;
@@ -316,6 +327,9 @@
 				606F556A284EE9AB0025251F /* Handlers.swift */,
 				606F556B284EE9AB0025251F /* AlertProvider.swift */,
 				606F558D284F4F2F0025251F /* Validator.swift */,
+				606F559B284FB5000025251F /* Extensions.swift */,
+				606F559F284FB88B0025251F /* Localizator.swift */,
+				606F55A1284FB9CC0025251F /* Coordinator.swift */,
 				606F558F284F4F2F0025251F /* LoaderIndicator.swift */,
 				606F558E284F4F2F0025251F /* InternalNotificationSender.swift */,
 			);
@@ -330,6 +344,7 @@
 				606F5587284F4CFD0025251F /* Language.swift */,
 				606F5588284F4CFD0025251F /* RegionalBloc.swift */,
 				606F5585284F4CFC0025251F /* Translation.swift */,
+				606F559D284FB5940025251F /* Flag.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -342,7 +357,6 @@
 			buildConfigurationList = 606F553C284E76790025251F /* Build configuration list for PBXNativeTarget "Automation-iOS" */;
 			buildPhases = (
 				CAFADB8EFB1A6D153A9F39F1 /* [CP] Check Pods Manifest.lock */,
-				BB5BA8F8076BB483946D904C /* Compile Swift Frameworks */,
 				606F550E284E76780025251F /* Sources */,
 				606F550F284E76780025251F /* Frameworks */,
 				606F5510284E76780025251F /* Resources */,
@@ -533,24 +547,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BB5BA8F8076BB483946D904C /* Compile Swift Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Swift Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652039202d736b2068747470733a2f2f\n6769736d6f6c6f772e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t\n";
-		};
 		CAFADB8EFB1A6D153A9F39F1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -597,13 +593,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606F5552284E79C40025251F /* MainViewModel.swift in Sources */,
+				606F559E284FB5940025251F /* Flag.swift in Sources */,
+				606F5552284E79C40025251F /* CountryListViewModel.swift in Sources */,
 				606F557C284F45FA0025251F /* CountriesAPI.swift in Sources */,
 				606F554D284E796F0025251F /* BaseViewController.swift in Sources */,
-				606F551A284E76780025251F /* DetailsViewController.swift in Sources */,
+				606F551A284E76780025251F /* CountryDetailsViewController.swift in Sources */,
 				606F5592284F4F2F0025251F /* LoaderIndicator.swift in Sources */,
 				606F5559284E7C840025251F /* Configuration.swift in Sources */,
-				606F5554284E79DD0025251F /* DetailsViewModel.swift in Sources */,
+				606F5554284E79DD0025251F /* CountryDetailsViewModel.swift in Sources */,
+				606F559C284FB5030025251F /* Extensions.swift in Sources */,
 				606F5577284EE9AC0025251F /* Handlers.swift in Sources */,
 				606F557E284F46180025251F /* Country.swift in Sources */,
 				606F556E284EE9AB0025251F /* APIClient.swift in Sources */,
@@ -617,9 +615,12 @@
 				606F5516284E76780025251F /* AppDelegate.swift in Sources */,
 				606F5590284F4F2F0025251F /* Validator.swift in Sources */,
 				606F5571284EE9AC0025251F /* NetworkActivityIndicatorManager.swift in Sources */,
+				606F55A2284FB9CC0025251F /* Coordinator.swift in Sources */,
+				606F55A0284FB88B0025251F /* Localizator.swift in Sources */,
 				606F5578284EE9AC0025251F /* AlertProvider.swift in Sources */,
 				606F5518284E76780025251F /* SceneDelegate.swift in Sources */,
-				606F5549284E78F70025251F /* MainViewController.swift in Sources */,
+				606F559A284FA9CA0025251F /* APIService.swift in Sources */,
+				606F5549284E78F70025251F /* CountryListViewController.swift in Sources */,
 				606F5550284E79B20025251F /* BaseViewModel.swift in Sources */,
 				606F5591284F4F2F0025251F /* InternalNotificationSender.swift in Sources */,
 				606F5589284F4CFD0025251F /* Translation.swift in Sources */,

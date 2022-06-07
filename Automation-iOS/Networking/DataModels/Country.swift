@@ -31,11 +31,11 @@ public struct Country: Codable {
     public var currencies: [Currency]?
     public var languages: [Language]?
     public var translations: Translation?
-    public var flag: String?
+    public var flags: Flag?
     public var regionalBlocs: [RegionalBloc]?
     public var cioc: String?
     
-    public init(name: String?, topLevelDomain: [String]?, alpha2Code: String?, alpha3Code: String?, callingCodes: [String]?, capital: String?, altSpellings: [String]?, region: String?, subregion: String?, population: Int?, latlng: [Double]?, demonym: String?, area: Double?, gini: Double?, timezones: [String]?, borders: [String]?, nativeName: String?, numericCode: String?, currencies: [Currency]?, languages: [Language]?, translations: Translation?, flag: String?, regionalBlocs: [RegionalBloc]?, cioc: String?) {
+    public init(name: String?, topLevelDomain: [String]?, alpha2Code: String?, alpha3Code: String?, callingCodes: [String]?, capital: String?, altSpellings: [String]?, region: String?, subregion: String?, population: Int?, latlng: [Double]?, demonym: String?, area: Double?, gini: Double?, timezones: [String]?, borders: [String]?, nativeName: String?, numericCode: String?, currencies: [Currency]?, languages: [Language]?, translations: Translation?, flags: Flag?, regionalBlocs: [RegionalBloc]?, cioc: String?) {
         self.name = name
         self.topLevelDomain = topLevelDomain
         self.alpha2Code = alpha2Code
@@ -57,7 +57,7 @@ public struct Country: Codable {
         self.currencies = currencies
         self.languages = languages
         self.translations = translations
-        self.flag = flag
+        self.flags = flags
         self.regionalBlocs = regionalBlocs
         self.cioc = cioc
     }
@@ -84,7 +84,7 @@ public struct Country: Codable {
         case currencies
         case languages
         case translations
-        case flag
+        case flags
         case regionalBlocs
         case cioc
     }

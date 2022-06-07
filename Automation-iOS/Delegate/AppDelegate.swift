@@ -33,3 +33,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    
+    func setAsRoot(_controller: UIViewController) {
+        if window != nil {
+            window?.rootViewController = _controller
+        }
+    }
+    
+}
+

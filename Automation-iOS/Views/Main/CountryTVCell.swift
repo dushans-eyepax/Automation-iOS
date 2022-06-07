@@ -34,11 +34,10 @@ class CountryTVCell: UITableViewCell {
     func configureCell(with data: Country) {
         nameLabel.text = data.name
         
-        let shortCode = data.altSpellings?.first?.lowercased() ?? ""
-        let flagUrlString = "https://www.countryflags.io/\(shortCode)/flat/64.png" // flat / shiny
-        //flagImageView.setImageWithUrl(flagUrlString)
+        let flagUrlString = data.flags?.png ?? ""
+        flagImageView.setImageWithUrl(flagUrlString)
         
-//        populationLabel.text = data.population.roundedWithAbbreviations
+        populationLabel.text = data.population?.roundedWithAbbreviations
         callingCodesLabel.text = (data.callingCodes ?? []).joined(separator: ",")
     }
     

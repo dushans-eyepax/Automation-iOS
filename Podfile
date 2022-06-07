@@ -7,9 +7,11 @@ target 'Automation-iOS' do
 
   # Pods for Automation-iOS
   pod 'Alamofire'
+  pod 'AlamofireImage'
   pod 'SwiftyJSON'
   pod 'NotificationBannerSwift'
   pod 'RappleProgressHUD'
+  pod 'SwiftyBeaver'
 
   target 'Automation-iOSTests' do
     inherit! :search_paths
