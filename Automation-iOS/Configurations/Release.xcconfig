@@ -9,4 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 API_KEY = xxxx
-BASE_URL = restcountries.com/v2/all
+BASE_URL = restcountries.com
